@@ -1,0 +1,82 @@
+.burgerIngridients{
+  height: 290px;
+  width: 100%;
+  overflow: auto;
+}
+
+.burgerIngridients p{
+  text-align: center;
+}
+
+.ingridientsBlock{
+  background-color: #f4b46c;
+  margin: 30px auto 0;
+  display: table;
+  max-width: 200px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 20px;
+  text-align: center;
+}
+
+.ingridientsBlock p{
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.ingrBtns{
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingrBtn{
+  border: 0;
+  background-color: #c17116;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  display: table;
+  width: 95px;
+}
+
+.side{
+  background-size: 300px;
+  height: 110px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top{
+  background-image: url(../assets/top.jpg);
+}
+
+.bottom{
+  background-image: url(../assets/bottom.jpg);
+  height: 60px;
+}
+
+.lettuce{
+  background-image: url(../assets/lettuse.jpg);
+  height: 27px;
+}
+
+.tomato{
+  background-image: url(../assets/tomato.jpg);
+  height: 27px;
+}
+
+.cheese{
+  background-image: url(../assets/cheese.jpg);
+  height: 27px;
+}
+
+.meat{
+  background-image: url(../assets/meat.jpg);
+  height: 27px;
+}
