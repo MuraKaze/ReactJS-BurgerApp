@@ -51,7 +51,10 @@ export default class Burger extends Component {
     return (
       <>
         <div className="burgerIngridients">
-          <div className="top side"></div>
+          <div className="top side">
+          <div class="seeds1"></div>
+          <div class="seeds2"></div>
+          </div>
           {this.renderBurgerIngredients()}
           <div className="bottom side"></div>
         </div>
@@ -59,28 +62,28 @@ export default class Burger extends Component {
         <div className="currentPrice">
           Current Price: <strong>${this.state.price.toFixed(2)}</strong>
         </div>
-          <div className="igridientsBlock">
+          <div className="ingridientsBlock">
             <p>Lettuce</p>
             <div className="ingrBtns">
               <button onClick={() => this.changeIngridient('add', 'lettuce')} className="ingrBtn">Add</button>
               <button onClick={() => this.changeIngridient('remove', 'lettuce')} className="ingrBtn">Remove</button>
             </div>
           </div>
-          <div className="igridientsBlock">
+          <div className="ingridientsBlock">
             <p>Tomato</p>
             <div className="ingrBtns">
               <button onClick={() => this.changeIngridient('add', 'tomato')} className="ingrBtn">Add</button>
               <button onClick={() => this.changeIngridient('remove', 'tomato')} className="ingrBtn">Remove</button>
             </div>
           </div>
-          <div className="igridientsBlock">
+          <div className="ingridientsBlock">
             <p>Cheese</p>
             <div className="ingrBtns">
               <button onClick={() => this.changeIngridient('add', 'cheese')} className="ingrBtn">Add</button>
               <button onClick={() => this.changeIngridient('remove', 'cheese')} className="ingrBtn">Remove</button>
             </div>
           </div>
-          <div className="igridientsBlock">
+          <div className="ingridientsBlock">
             <p>Meat</p>
             <div className="ingrBtns">
               <button onClick={() => this.changeIngridient('add', 'meat')} className="ingrBtn">Add</button>

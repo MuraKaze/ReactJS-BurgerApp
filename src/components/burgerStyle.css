@@ -1,57 +1,55 @@
-.burgerIngridients{
-  height: 290px;
+.burgerIngridients {
+  height: 100vh;
   width: 100%;
-  overflow: auto;
 }
+
 
 .burgerIngridients p{
   text-align: center;
 }
 
-.ingridientsBlocks{
+.ingridientsBlocks {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   background-color: #f4b46c;
-  margin: 30px auto 0;
-  display: table;
   width: 100%;
-  border-radius: 3px;
   padding: 20px;
   text-align: center;
+  border-top: 1px solid #ccc;
 }
 
-.igridientsBlock{
-  width: 10%;
-  margin-left: 16vh;
+
+.ingridientsBlock {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 30%;
 }
 
-.ingridientsBlocks p{
-  width: 100%;
-  margin-right: 30px;
+.ingridientsBlock p {
   font-weight: bold;
   font-size: 18px;
   text-transform: capitalize;
 }
 
-.ingrBtns{
+.ingrBtns {
   display: flex;
-  justify-content: center;
 }
 
-.ingrBtn{
+.ingrBtn {
   border: 0;
   background-color: #c17116;
   margin: 10px;
   color: #fff;
   padding: 5px;
   cursor: pointer;
-  display: table;
   width: 95px;
 }
 
-.side{
+
+.side {
   background-size: 300px;
   height: 110px;
   width: 100%;
@@ -60,43 +58,103 @@
   background-position: center;
 }
 
-.top{
-  background-image: url(../assets/top.jpg);
+.top {
+  height: 20%;
+  background: linear-gradient(#bc581e, #e27b36);
+  border-radius: 50% 50% 0 0;
+  width: 80%;
+  position: relative;
+  box-shadow: inset -15px 0 #c15711;
+  margin: 2% auto;
 }
 
-.bottom{
-  background-image: url(../assets/bottom.jpg);
-  height: 60px;
+.bottom {
+  width: 80%;
+  height: 13%;
+  background: linear-gradient(#f08e4a, #e27b36);
+  border-radius: 0 0 30px 30px;
+  box-shadow: inset -15px 0 #c15711;
+  margin: 2% auto;
 }
 
 .tomato {
-  width: 40%;
   height: 3%;
   background: linear-gradient(#bf3813, #c45e38);
-  margin: 1% auto;
 }
 
 .cheese {
-  width: 50%;
   height: 4.5%;
-  margin: 1% auto;
   background: linear-gradient(#f4d004, #d6bb22);
   border-radius: 20px;
 }
 
 .meat {
-  width: 45%;
   height: 8%;
-  background: linear-gradient(#7f3608, #702e05); /* Simplified background syntax */
-  margin: 2% auto;
+  background: linear-gradient(#7f3608, #702e05);
   border-radius: 15px;
 }
 
 .lettuce {
-  width: 50%;
   height: 7%;
-  margin: 1% auto;
   background: linear-gradient(#228c1d, #91ce50);
   border-radius: 20px;
 }
 
+.seeds1 {
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  background-color: #fff;
+  left: 30%;
+  top: 50%;
+  border-radius: 40%;
+  transform: rotate(-20deg);
+  box-shadow: inset -2px -3px #c9c9c9;
+}
+
+.seeds1:before, .seeds1:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 40%;
+}
+
+.seeds1:before {
+  left: 180%;
+  top: -50%;
+  box-shadow: inset -1px -3px #c9c9c9;
+}
+
+.seeds1:after {
+  left: -170%;
+  top: -260%;
+  box-shadow: inset -1px 2px #c9c9c9;
+  transform: rotate(60deg);
+}
+
+.seeds2 {
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  background-color: #fff;
+  left: 64%;
+  top: 50%;
+  border-radius: 40%;
+  transform: rotate(10deg);
+  box-shadow: inset -3px 0 #c9c9c9;
+}
+
+.seeds2:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 150%;
+  top: -130%;
+  border-radius: 40%;
+  transform: rotate(90deg);
+  box-shadow: inset 1px 3px #c9c9c9;
+}
