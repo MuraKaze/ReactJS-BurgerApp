@@ -8,34 +8,42 @@
   text-align: center;
 }
 
-.ingridientsBlock{
+.ingridientsBlocks{
   background-color: #f4b46c;
   margin: 30px auto 0;
   display: table;
-  max-width: 200px;
   width: 100%;
   border-radius: 3px;
   padding: 20px;
   text-align: center;
 }
 
-.ingridientsBlock p{
-  padding: 0;
-  margin: 0;
+.igridientsBlock{
+  width: 10%;
+  margin-left: 16vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ingridientsBlocks p{
+  width: 100%;
+  margin-right: 30px;
   font-weight: bold;
   font-size: 18px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .ingrBtns{
-  margin: 0 0 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .ingrBtn{
   border: 0;
   background-color: #c17116;
+  margin: 10px;
   color: #fff;
   padding: 5px;
   cursor: pointer;
@@ -61,22 +69,34 @@
   height: 60px;
 }
 
-.lettuce{
-  background-image: url(../assets/lettuse.jpg);
-  height: 27px;
+.tomato {
+  width: 40%;
+  height: 3%;
+  background: linear-gradient(#bf3813, #c45e38);
+  margin: 1% auto;
 }
 
-.tomato{
-  background-image: url(../assets/tomato.jpg);
-  height: 27px;
+.cheese {
+  width: 50%;
+  height: 4.5%;
+  margin: 1% auto;
+  background: linear-gradient(#f4d004, #d6bb22);
+  border-radius: 20px;
 }
 
-.cheese{
-  background-image: url(../assets/cheese.jpg);
-  height: 27px;
+.meat {
+  width: 45%;
+  height: 8%;
+  background: linear-gradient(#7f3608, #702e05); /* Simplified background syntax */
+  margin: 2% auto;
+  border-radius: 15px;
 }
 
-.meat{
-  background-image: url(../assets/meat.jpg);
-  height: 27px;
+.lettuce {
+  width: 50%;
+  height: 7%;
+  margin: 1% auto;
+  background: linear-gradient(#228c1d, #91ce50);
+  border-radius: 20px;
 }
+
